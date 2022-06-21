@@ -1,0 +1,16 @@
+base_url = "https://kirusfg.com"
+
+title = "kirusfg"
+description = "kirusfg's personal website"
+
+default_language = "en"
+
+compile_sass = true
+build_search_index = true
+
+[markdown]
+highlight_code = true
+highlight_theme = "gruvbox-light"
+
+[extra]
+# Put all your custom variables here
