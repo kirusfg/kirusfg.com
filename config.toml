@@ -3,12 +3,11 @@ base_url = "https://kirusfg.com"
 title = "kirusfg"
 description = "kirusfg's personal website"
 
-theme = "apollo"
-
 default_language = "en"
 
 compile_sass = true
 build_search_index = true
+minify_html = true
 
 [markdown]
 highlight_code = true
@@ -21,8 +20,14 @@ menu = [
     { name = "/posts", url = "/posts", weight = 1 },
 ]
 
-stylesheets = [
-    "main_override.css",
-    "theme/gruvbox_light.css",
-    "theme/fonts.css",
+toc = true
+use_cdn = false
+favicon = "/icon/favicon.png"
+theme = "light"
+
+socials = [
+    {name = "twitter", url = "https://twitter.com/kirusfg", icon = "twitter"},
+    {name = "github", url = "https=//github.com/kirusfg", icon = "github"},
 ]
+
+custom_css = []
