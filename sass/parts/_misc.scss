@@ -12,8 +12,8 @@
 }
 
 ::selection {
-  background: rgba(0, 0, 0, 0.1);
-  color: inherit;
+  background: var(--primary-color);
+  color: var(--bg-0);
 }
 
 ::-moz-selection {
