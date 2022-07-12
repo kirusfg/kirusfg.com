@@ -1,4 +1,7 @@
 +++
-paginate_by = 7
-sort_by = "date"
+title = "About"
+template = "page.html"
+transparent = true
 +++
+
+Hello, this is me.
