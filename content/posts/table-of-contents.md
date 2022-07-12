@@ -1,6 +1,9 @@
 +++
 title = "Table of Contents Test"
 date = "2022-01-02"
+
+[extra]
+show_toc = true
 +++
 
 # Heading 1

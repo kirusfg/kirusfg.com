@@ -15,7 +15,6 @@ menu = [
     { name = "/posts", url = "/posts", weight = 3 },
 ]
 
-toc = true
 use_cdn = false
 favicon = "/icon/favicon.png"
 theme = "light"
