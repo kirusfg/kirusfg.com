@@ -9,6 +9,9 @@
         {% else %}
             {% set section = get_section(path="posts/_index.md") %}
             {%- set show_pages = section.pages -%}
+            {%- if not section.pages %}
+                Nothing here yet...
+            {% endif -%}
         {% endif -%}
 
         {{ post_macros::list_posts(pages=show_pages) }}
