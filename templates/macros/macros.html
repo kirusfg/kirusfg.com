@@ -32,6 +32,29 @@
     </ul>
 {% endmacro list_posts %}
 
+{% macro list_projects(pages) %}
+    <ul>
+    {%- for page in pages %}
+        {%- if page.draft %}
+            {% continue %}
+        {% endif -%}
+
+        <section class="list-item">
+            <h1 class="title">
+                <a href={{ page.permalink }}>{{page.title}}</a>
+            </h1>
+
+            <div class="description">
+                {% if page.description %}
+                    {{ page.description }}
+                {% endif %}
+            </div>
+        </section>
+
+    {% endfor -%}
+    </ul>
+{% endmacro list_projects%}
+
 {% macro tags(page, short=false) %}
     {%- if page.taxonomies and page.taxonomies.tags %}
         <span class="post-tags-inline">
